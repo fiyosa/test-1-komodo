@@ -6,6 +6,7 @@ const server = http.createServer((req, res) => {
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     const responseData = {
+      test: 'test-1',
       app: process.env.APP_NAME || 'DefaultApp',
       user: process.env.APP_USERNAME || 'anonymous'
     };
