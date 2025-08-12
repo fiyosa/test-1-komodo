@@ -8,5 +8,5 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - APP_NAME=compose-name
-      - APP_USERNAME=compose-username
+      - APP_NAME=${APP_NAME}
+      - APP_USERNAME=${APP_USERNAME}
